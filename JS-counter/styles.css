@@ -1,0 +1,88 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --clr-bg : #1c1f25;
+    --clr-accent1: #b3ec8d;
+    --clr-muted1: rgb(190, 240, 169);
+    --clr-accent2: #ed5e93;
+
+
+
+    --clr-blue100: #F0F4F8;
+    --clr-blue200: #D9E2EC;
+    --clr-blue300: #BCCCDC;
+    --clr-blue400: #9FB3C8; 
+    --clr-blue500: #829AB1;
+    --clr-blue600: #627D98;
+    --clr-blue700: #486581;
+    --clr-blue800: #334E68;
+    --clr-blue900: #243B53;
+    --clr-blue: #102A43;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--clr-blue);
+}
+
+/* Global */
+
+.wrapper {
+    padding-inline: 4em;
+
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* Typography */
+
+#counter-number {
+    font-size: 3em;
+}
+
+/* Components */
+
+.counter-container button {
+    font-size: 1.325em;
+    font-family: inherit;
+    padding: 1em;
+    border: none;
+    outline: none;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--clr-blue400);
+    color: white;
+
+}
+/* Counter */
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8em;
+    border: solid 1px black; 
+    border-radius: 12px;
+    background-color: var(--clr-blue100);
+}
+
+.counter-buttons {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+#minus:hover, #subtract:hover {
+    opacity: 0.9;
+}
